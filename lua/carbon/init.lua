@@ -1,7 +1,8 @@
+local theme = require("carbon.theme")
 local M = {}
 
 function M.setup()
-	print("lua/carbon/init.lua is executed!")
+	theme.apply()
 end
 
 return M

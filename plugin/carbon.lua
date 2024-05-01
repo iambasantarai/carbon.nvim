@@ -1,1 +1,1 @@
-print("plugin/carbon.lua is executed!")
+require("carbon").setup()
