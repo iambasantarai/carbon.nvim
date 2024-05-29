@@ -1,9 +1,9 @@
 local M = {}
 
-M.highlight_group = function(group, colors)
-	local bg = colors.bg or "NONE"
-	local fg = colors.fg or "NONE"
-	local gui = colors.gui or "NONE"
+M.highlight_group = function(group, properties)
+	local bg = properties.bg or "NONE"
+	local fg = properties.fg or "NONE"
+	local gui = properties.gui or "NONE"
 
 	local cmd = "highlight " .. group .. " guibg=" .. bg .. " guifg=" .. fg .. " gui=" .. gui
 	vim.cmd(cmd)
